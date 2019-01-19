@@ -63,3 +63,14 @@ sudo apt install brave-browser brave-keyring
 #
 # end brave browser
 ###
+
+
+###
+# 
+# CONFIGURATION
+
+sudo chsh -s /usr/bin/fish sean
+
+# END CONFIGURATION
+#
+###
