@@ -1,0 +1,51 @@
+[user]
+  name  = Sean T. Allen
+  email = sean@monkeysnatchbanana.com
+
+[core]
+  excludesfile = /Users/sean/.gitignore
+  pager        = /usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight
+  trustctime   = false
+
+[color]
+  ui          = auto
+  diff        = auto
+
+[alias]
+  amend     = commit --amend
+  branches  = branch --list
+  ci        = commit
+  co        = checkout
+  di        = diff
+  div       = divergence
+  diw       = diff -w
+  out       = outgoing
+  pom       = push origin master
+  remotes   = remote -v
+  st        = status
+  tags      = tag --list
+  track     = checkout -t
+  upstream  = remote add upstream
+  wipe      = reset --hard HEAD
+
+[push]
+  default = simple
+
+[branch]
+  autosetuprebase = always
+
+[difftool]
+  prompt = false
+
+[mergetool]
+  prompt = false
+
+[rebase]
+  autostash = true
+  autosquash = true
+
+[filter "lfs"]
+  process = git-lfs filter-process --skip
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge --skip %f
