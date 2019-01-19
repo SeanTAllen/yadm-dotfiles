@@ -120,3 +120,12 @@ fi
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+## set powerline-go as default command prompt
+function _update_ps1() {
+    PS1="$(~/bin/powerline-go -error $?)"
+}
+
+if [ "$TERM" != "linux" ]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
