@@ -1,5 +1,9 @@
 set -gx EDITOR 'vim'
 
+## path
+
+set -gx PATH $HOME/bin $PATH
+
 ## use powerline-go for command prompt
 function fish_prompt
     ~/bin/powerline-go -error $status -shell bare -modules venv,ssh,cwd,perms,git,jobs -cwd-max-depth 1 -truncate-segment-width 8
