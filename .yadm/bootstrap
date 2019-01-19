@@ -33,3 +33,21 @@ curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.s
 #
 # end git-lfs
 ###
+
+###
+# brave browser
+#
+
+curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key add -
+
+source /etc/os-release
+
+echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ $UBUNTU_CODENAME main" | sudo tee /etc/apt/sources.list.d/brave-browser-release-${UBUNTU_CODENAME}.list
+
+sudo apt update
+
+sudo apt install brave-browser brave-keyring
+
+#
+# end brave browser
+###
