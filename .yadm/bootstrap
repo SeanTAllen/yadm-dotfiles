@@ -1,0 +1,34 @@
+#!/bin/bash
+
+sudo apt-get install openssh-server
+sudo apt-get install shellcheck
+
+###
+# powerline-go
+#
+
+echo "Installing powerline-go"
+
+powerline_binary=powerline-go-linux-amd64
+
+push /tmp || exit
+wget "https://github.com/justjanne/powerline-go/releases/download/v1.11.0/$powerline_binary"
+mv "$powerline_binary" ~/bin/powerline-go
+chmod a+x ~/bin/powerline-go
+popd || exit
+
+sudo apt-get install fonts-powerline
+
+#
+# end powerline-go
+###
+
+###
+# git-lfs
+#
+
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+
+#
+# end git-lfs
+###
