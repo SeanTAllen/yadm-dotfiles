@@ -24,7 +24,7 @@ echo "Installing powerline-go"
 
 powerline_binary=powerline-go-linux-amd64
 
-push /tmp || exit
+pushd /tmp || exit
 wget "https://github.com/justjanne/powerline-go/releases/download/v1.11.0/$powerline_binary"
 mv "$powerline_binary" ~/bin/powerline-go
 chmod a+x ~/bin/powerline-go
