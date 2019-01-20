@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# let's update first
+sudo apt-get update
+
+# "standards"
+
 sudo apt-get install openssh-server
 sudo apt-get install shellcheck
 sudo apt-get install vim
