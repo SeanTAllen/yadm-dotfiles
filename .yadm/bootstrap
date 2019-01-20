@@ -75,6 +75,22 @@ sudo apt install brave-browser brave-keyring
 ###
 
 ###
+# hugo
+#
+
+pushd /tmp || exit
+wget https://github.com/gohugoio/hugo/releases/download/v0.53/hugo_0.53_Linux-64bit.tar.gz
+tar xzf hugo_0.53_Linux-64bit.tar.gz
+mv hugo ~/bin/hugo-53
+chmod a+x ~/bin/hugo-53
+ln -s ~/bin/hugo-53 ~/bin/hugo
+popd || exit
+
+#
+# end hugo
+###
+
+###
 # 
 # CONFIGURATION
 
