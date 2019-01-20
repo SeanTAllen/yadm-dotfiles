@@ -2,6 +2,7 @@ set -gx EDITOR 'vim'
 
 ## aliases
 
+# git
 alias add      'git add'
 alias amend    'git amend'
 alias branches 'git branches'
@@ -22,6 +23,12 @@ alias st       'git status'
 alias tag      'git tag'
 alias tags     'git tags'
 alias upstream 'git upstream'
+
+# yadm
+alias yadd     'yadm add'
+alias yci      'yadm commit'
+alias ypush    'yadm push'
+alias yst      'yadm status'
 
 ## path
 
