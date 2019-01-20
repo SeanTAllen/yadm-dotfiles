@@ -123,7 +123,7 @@ export EDITOR="$VISUAL"
 
 ## set powerline-go as default command prompt
 function _update_ps1() {
-    PS1="$(~/bin/powerline-go -error $? -modules venv,ssh,cwd,perms,git,jobs -cwd-max-depth 1 -truncate-segment-width 8)"
+    PS1="$(~/bin/powerline-go -error $? -modules host,ssh,venv,cwd,perms,git,jobs -cwd-max-depth 1 -truncate-segment-width 8)"
 }
 
 if [ "$TERM" != "linux" ]; then
