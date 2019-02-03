@@ -9,6 +9,7 @@ sudo apt-get install openssh-server
 sudo apt-get install shellcheck
 sudo apt-get install vim
 sudo apt-get install htop
+sudo apt-get install lldb
 
 # pony dependencies
 
