@@ -20,9 +20,12 @@ sudo apt-get install -y build-essential zlib1g-dev libncurses5-dev libssl-dev li
 # fish shell
 #
 
-sudo apt-add-repository ppa:fish-shell/release-2
-sudo apt-get update
-sudo apt-get install fish
+if ! test -f /usr/bin/fish
+then
+  sudo apt-add-repository ppa:fish-shell/release-2
+  sudo apt-get update
+  sudo apt-get install fish
+fi
 
 #
 # end fish shell
