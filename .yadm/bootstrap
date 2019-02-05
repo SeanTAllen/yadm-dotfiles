@@ -48,14 +48,17 @@ fi
 # powerline-go
 #
 
-pushd /tmp || exit
-wget https://github.com/bketelsen/powerline-go/releases/download/v2.0.3/powerline-go_2.0.3_linux_amd64.tar.gz
-tar xzf powerline-go_2.0.3_linux_amd64.tar.gz
-mv powerline-go ~/bin/powerline-go
-chmod a+x ~/bin/powerline-go
-popd || exit
+if ! test -f ~/bin/powerline-go
+then
+  pushd /tmp || exit
+  wget https://github.com/bketelsen/powerline-go/releases/download/v2.0.3/powerline-go_2.0.3_linux_amd64.tar.gz
+  tar xzf powerline-go_2.0.3_linux_amd64.tar.gz
+  mv powerline-go ~/bin/powerline-go
+  chmod a+x ~/bin/powerline-go
+  popd || exit
 
-sudo apt-get install fonts-powerline
+  sudo apt-get install fonts-powerline
+fi
 
 #
 # end powerline-go
