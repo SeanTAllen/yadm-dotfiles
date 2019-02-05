@@ -36,7 +36,6 @@ fi
 #
 
 if ! test -d ~/.vim/pack/numbers/start/numbers
-  git clone https://github.com/b3niup/numbers.vim.git ~/.vim/bundle/numbers
 then
   git clone https://github.com/b3niup/numbers.vim.git ~/.vim/pack/numbers/start/numbers
 fi
