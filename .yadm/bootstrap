@@ -35,9 +35,16 @@ fi
 # vim modules
 #
 
+# line number goodness
 if ! test -d ~/.vim/pack/numbers/start/numbers
 then
   git clone https://github.com/b3niup/numbers.vim.git ~/.vim/pack/numbers/start/numbers
+fi
+
+# pony support
+if ! test -d ~/.vim/pack/pony-vim-syntax/start/pony-vim-syntax
+then
+  git clone https://github.com/dleonard0/pony-vim-syntax.git ~/.vim/pack/pony-vim-syntax/start/pony-vim-syntax
 fi
 
 #
