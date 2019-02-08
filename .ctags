@@ -1,5 +1,7 @@
+--recurse=yes
 --exclude=.git
 --exclude=build
+--exclude=*.md
 
 --langdef=pony
 --langmap=pony:.pony
