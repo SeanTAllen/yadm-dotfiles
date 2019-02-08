@@ -1,3 +1,6 @@
+--exclude=.git
+--exclude=build
+
 --langdef=pony
 --langmap=pony:.pony
 --regex-pony=/^[ \t]*actor[ \t]+([a-zA-Z0-9_]+)/\1/a,actor/
