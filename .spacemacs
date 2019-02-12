@@ -320,6 +320,8 @@ you should place your code here."
   (add-hook 'company-mode-hook
             (lambda()
               (global-set-key (kbd "<right>") 'company-complete)))
+  ;; soft-wrap when using markdown mode
+  (add-hook 'markdown-mode-hook 'visual-line-mode)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
