@@ -315,6 +315,10 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (setq create-lockfiles nil)
   (global-centered-cursor-mode +1)
+  ;; use right arrow key to complete selection when using company-mode
+  (add-hook 'company-mode-hook
+            (lambda()
+              (global-set-key (kbd "<right>") 'company-complete)))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
