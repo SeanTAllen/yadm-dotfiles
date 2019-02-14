@@ -1,20 +1,6 @@
 # (No) Title Bars
 for_window [class="^.*"] border pixel 0
 
-# Gaps
-#gaps inner 10
-#gaps outer 0
-#smart_gaps on
-
-# Assign workspaces to screens
-#  On E560, eDP-1 is the first display, while DP-2 is VGA output
-workspace 1 output eDP-1
-workspace 2 output eDP-1
-workspace 3 output eDP-1
-workspace 4 output DP-2
-workspace 5 output DP-2
-workspace 6 output DP-2
-
 # Assign applications to workspaces
 #  xprop | grep "CLASS"
 
