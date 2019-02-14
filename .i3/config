@@ -4,26 +4,6 @@ for_window [class="^.*"] border pixel 0
 # Assign applications to workspaces
 #  xprop | grep "CLASS"
 
-
-set $black       #212121
-set $darkblack   #000000
-set $red         #fb4934
-set $darkred     #cc241d
-set $green       #b8bb26
-set $darkgreen   #98971a
-set $yellow      #fabd2f
-set $darkyellow  #d79921
-set $blue        #83a598
-set $darkblue    #458588
-set $magenta     #d3869b
-set $darkmagenta #b16286
-set $cyan        #8ec07c
-set $darkcyan    #689d6a
-set $white       #ebdbb2
-set $darkwhite   #a89984
-set $background  #000000
-set $transparent #00000000
-
 # Windows button
 set $mod Mod4
 
@@ -50,36 +30,17 @@ bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -show combi'
 # Screenshot (now provided by Plasma)
 # bindsym Print exec --no-startup-id spectacle
 
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
-
-# alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
-
-# alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
-
-#bindsym $mod+space exec krunner
-#bindsym $mod+d exec rofi "-combi-modi window,drun -show combi -modi combi"
 
 # split in horizontal orientation
 bindsym $mod+h split v
@@ -131,12 +92,6 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
-# Move focus between screens
-bindsym $mod+Alt+h focus output left
-bindsym $mod+Alt+Left focus output left
-bindsym $mod+Alt+l focus output right
-bindsym $mod+Alt+Right focus output right
-
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -174,18 +129,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# i3bar
-#bar {
-#        verbose yes
-#        position bottom 
-#        status_command i3blocks
-#        i3bar_command i3bar -t
-#        colors {
-#          statusline #ffffff
-#          background $transparent
-#        }
-#}
-
 # Starting things with i3
 # exec --no-startup-id xcompmgr -C &    # Bare compositor to allow transparency
 exec --no-startup-id pulseaudio --start
@@ -206,4 +149,9 @@ for_window [class="krunner"] floating enable, border none
 for_window [class="Kmix"] floating enable, border none
 for_window [class="Klipper"] floating enable, border none
 for_window [class="Plasmoidviewer"] floating enable, border none
-for_window [title="widgets"] floating enable, border none
+
+# other settings
+focus_follows_mouse no
+
+# Pressing $mod and current workspace number takes you back to the previousle active workspace
+workspace_auto_back_and_forth yes
