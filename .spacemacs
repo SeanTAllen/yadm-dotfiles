@@ -316,10 +316,6 @@ you should place your code here."
   (setq powerline-default-separator 'utf-8)
   (setq create-lockfiles nil)
   (global-centered-cursor-mode +1)
-  ;; use right arrow key to complete selection when using company-mode
-  (add-hook 'company-mode-hook
-            (lambda()
-              (global-set-key (kbd "<right>") 'company-complete)))
   ;; soft-wrap when using markdown mode
   (add-hook 'markdown-mode-hook 'visual-line-mode)
   )
