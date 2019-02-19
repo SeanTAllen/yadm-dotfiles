@@ -39,6 +39,9 @@ alias yci      'yadm commit'
 alias ypush    'yadm push'
 alias yst      'yadm status'
 
+# standard typos
+alias mkidr     mkdir
+
 ## path
 
 set -gx PATH $HOME/bin $PATH
