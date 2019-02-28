@@ -14,7 +14,7 @@ sudo apt-get install lldb
 
 # pony dependencies
 
-sudo apt-get install -y build-essential zlib1g-dev libncurses5-dev libssl-dev libpcre2-dev llvm-3.9
+sudo apt-get install -y build-essential zlib1g-dev libncurses5-dev libssl-dev libpcre2-dev llvm-7
 
 ###
 # DE setup - KDE + i3
