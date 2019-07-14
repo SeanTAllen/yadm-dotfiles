@@ -102,7 +102,7 @@ curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.s
 ###
 
 ###
-# hugo
+# Hugo
 #
 
 if ! test -f ~/bin/hugo-53 
@@ -117,7 +117,7 @@ then
 fi
 
 #
-# end hugo
+# end Hugo
 ###
 
 ###
@@ -168,11 +168,10 @@ sudo usermod -aG docker $USER
 ###
 
 ###
-# 
-# CONFIGURATION
-
+# configuration
+#
 sudo chsh -s /usr/bin/fish $USER
 
-# END CONFIGURATION
 #
+# END configuration
 ###
