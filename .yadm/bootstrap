@@ -190,6 +190,9 @@ sudo usermod -aG docker $USER
 #
 sudo chsh -s /usr/bin/fish $USER
 
+# add "personal" code projects directory
+mkdir -p ~/code/seantallen
+
 #
 # END configuration
 ###
