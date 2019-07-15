@@ -1,5 +1,11 @@
 #!/bin/bash
 
+read -p 'You should have a SSH key from this machine registered with GitHub before proceeding. Continue? [y/*] ' SSHKEYOK
+if [[ $SSHKEYOK != "y" ]]
+then
+  exit
+fi
+
 # let's update first
 sudo apt-get update
 
