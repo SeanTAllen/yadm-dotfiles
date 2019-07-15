@@ -205,18 +205,16 @@ then
   git clone git@github.com:ponylang/changelog-tool.git
 fi
 
-read -p 'Number of cores to use building LLVM: ' CORES
-read -p 'Build using "default_pic=true"? [y/n] ' PIC
-if [[ $PIC == "y" ]]
-then
-  echo "hello"
-  DEFAULT_PIC='default_pic=true'
-fi
-
 # build and install ponyc if it doesn't already exist
 if ! command -v ponyc
 then
-  # use all the real cores for parallelism of the LLVM build
+  read -p 'Number of cores to use building LLVM: ' CORES
+  read -p 'Build using "default_pic=true"? [y/n] ' PIC
+  if [[ $PIC == "y" ]]
+  then
+    DEFAULT_PIC='default_pic=true'
+  fi
+
   pushd ~/code/ponylang/ponyc || exit
   make -f Makefile-lib-llvm ${DEFAULT_PIC} use=llvm_link_static -j${CORES}
   sudo make install
