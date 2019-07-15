@@ -224,7 +224,7 @@ fi
 if ! command -v ponyc
 then
   read -p 'Number of cores to use building LLVM: ' CORES
-  read -p 'Build using "default_pic=true"? [y/n] ' PIC
+  read -p 'Build using "default_pic=true"? [y/*] ' PIC
   if [[ $PIC == "y" ]]
   then
     DEFAULT_PIC='default_pic=true'
