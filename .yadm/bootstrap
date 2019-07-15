@@ -111,6 +111,7 @@ curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.s
 # Hugo
 #
 
+# standard version that i use for most things right now
 if ! test -f ~/bin/hugo-53 
 then
   pushd /tmp || exit
@@ -119,6 +120,17 @@ then
   mv hugo ~/bin/hugo-53
   chmod a+x ~/bin/hugo-53
   ln -s ~/bin/hugo-53 ~/bin/hugo
+  popd || exit
+fi
+
+# for ponylang website
+if ! test -f ~/bin/hugo-24.1 
+then
+  pushd /tmp || exit
+  wget https://github.com/gohugoio/hugo/releases/download/v0.24.1/hugo_0.24.1_Linux-64bit.tar.gz
+  tar xzf hugo_0.24.1_Linux-64bit.tar.gz
+  mv hugo ~/bin/hugo-24.1
+  chmod a+x ~/bin/hugo-24.1
   popd || exit
 fi
 
