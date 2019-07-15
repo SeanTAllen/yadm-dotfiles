@@ -18,7 +18,6 @@ sudo apt-get install \
     software-properties-common
 
 # "standards"
-
 sudo apt-get install -y \
   clang \
   git \
@@ -29,7 +28,6 @@ sudo apt-get install -y \
   vim
 
 # pony dependencies
-
 sudo apt-get install -y build-essential zlib1g-dev libncurses5-dev libssl-dev libpcre2-dev cmake
 
 ###
