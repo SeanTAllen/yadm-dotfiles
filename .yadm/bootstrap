@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p 'You should have a SSH key from this machine registered with GitHub before proceeding. Continue? [y/*] ' SSHKEYOK
+read -rp 'You should have a SSH key from this machine registered with GitHub before proceeding. Continue? [y/*] ' SSHKEYOK
 if [[ $SSHKEYOK != "y" ]]
 then
   exit
@@ -38,7 +38,7 @@ sudo apt-get install -y libssl-dev libpcre2-dev
 # DE setup - KDE + i3
 #
 
-read -p 'Install desktop environment? [y/*] ' INSTALLDE
+read -rp 'Install desktop environment? [y/*] ' INSTALLDE
 
 if [[ $INSTALLDE == "y" ]]
 then
@@ -232,8 +232,8 @@ fi
 # build and install ponyc if it doesn't already exist
 if ! command -v ponyc
 then
-  read -p 'Number of cores to use building LLVM: ' CORES
-  read -p 'Build using "default_pic=true"? [y/*] ' PIC
+  read -rp 'Number of cores to use building LLVM: ' CORES
+  read -rp 'Build using "default_pic=true"? [y/*] ' PIC
   if [[ $PIC == "y" ]]
   then
     DEFAULT_PIC='default_pic=true'
