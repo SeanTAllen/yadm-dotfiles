@@ -136,6 +136,17 @@ then
   popd || exit
 fi
 
+# for docsy theme websites
+if ! test -f ~/bin/hugo-extended-56
+then
+  pushd /tmp || exit
+  wget https://github.com/gohugoio/hugo/releases/download/v0.56.3/hugo_extended_0.56.3_Linux-64bit.tar.gz
+  tar xzf hugo_extended_0.56.3_Linux-64bit.tar.gz
+  mv hugo ~/bin/hugo-extended-56
+  chmod a+x ~/bin/hugo-extended-56
+  popd || exit
+fi
+
 # for ponylang website
 if ! test -f ~/bin/hugo-24.1
 then
