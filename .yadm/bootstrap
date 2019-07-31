@@ -1,5 +1,8 @@
 #!/bin/bash
 
+set -o errexit
+set -o nounset
+
 read -rp 'You should have a SSH key from this machine registered with GitHub before proceeding. Continue? [y/*] ' SSHKEYOK
 if [[ $SSHKEYOK != "y" ]]
 then
