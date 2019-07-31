@@ -25,16 +25,27 @@ sudo apt-get install -y \
   lldb \
   openssh-server \
   shellcheck \
-  vim
+  vim \
+  jq
 
 # pony dependencies
-sudo apt-get install -y build-essential zlib1g-dev libncurses5-dev libssl-dev libpcre2-dev cmake
+sudo apt-get install -y build-essential zlib1g-dev libncurses5-dev cmake
+
+## needed by some pony libraries i use
+sudo apt-get install -y libssl-dev libpcre2-dev
 
 ###
 # DE setup - KDE + i3
 #
 
-sudo apt-get install kubuntu-desktop i3-wm wmctrl rofi
+read -p 'Install desktop environment? [y/*] ' INSTALLDE
+
+if [[ $INSTALLDE == "y" ]]
+then
+  sudo apt-get install kubuntu-desktop i3-wm wmctrl rofi
+else
+  echo "skipping desktop environment install"
+fi
 
 #
 # end DE setup
@@ -110,7 +121,7 @@ curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.s
 #
 
 # standard version that i use for most things right now
-if ! test -f ~/bin/hugo-53 
+if ! test -f ~/bin/hugo-53
 then
   pushd /tmp || exit
   wget https://github.com/gohugoio/hugo/releases/download/v0.53/hugo_0.53_Linux-64bit.tar.gz
@@ -122,7 +133,7 @@ then
 fi
 
 # for ponylang website
-if ! test -f ~/bin/hugo-24.1 
+if ! test -f ~/bin/hugo-24.1
 then
   pushd /tmp || exit
   wget https://github.com/gohugoio/hugo/releases/download/v0.24.1/hugo_0.24.1_Linux-64bit.tar.gz
@@ -164,7 +175,7 @@ fi
 # add Docker GPG key
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
-# add Docker "stable" repository. 
+# add Docker "stable" repository.
 sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
