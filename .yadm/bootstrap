@@ -172,7 +172,7 @@ then
   wget http://prdownloads.sourceforge.net/ctags/ctags-5.8.tar.gz
   tar xzf ctags-5.8.tar.gz
   pushd ctags-5.8 || exit
-  ./configure --prefix=$HOME/
+  ./configure --prefix="$HOME"/
   make
   make install
   popd || exit
@@ -208,7 +208,7 @@ then
     sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
     # allow Docker to me administered without using `sudo`
-    sudo usermod -aG docker $USER
+    sudo usermod -aG docker "$USER"
   fi
 fi
 
@@ -219,7 +219,7 @@ fi
 ###
 # configuration
 #
-sudo chsh -s /usr/bin/fish $USER
+sudo chsh -s /usr/bin/fish "$USER"
 
 # add "personal" code projects directory
 mkdir -p ~/code/seantallen
@@ -262,7 +262,7 @@ then
   fi
 
   pushd ~/code/ponylang/ponyc || exit
-  make -f Makefile-lib-llvm ${DEFAULT_PIC} use=llvm_link_static -j${CORES}
+  make -f Makefile-lib-llvm ${DEFAULT_PIC} use=llvm_link_static -j"${CORES}"
   sudo make install
   popd || exit
 fi
