@@ -127,7 +127,7 @@ fi
 # Hugo
 #
 
-# standard version that i use for most things right now
+# i still use a couple sites that need 53
 if ! test -f ~/bin/hugo-53
 then
   pushd /tmp || exit
@@ -135,11 +135,10 @@ then
   tar xzf hugo_0.53_Linux-64bit.tar.gz
   mv hugo ~/bin/hugo-53
   chmod a+x ~/bin/hugo-53
-  ln -s ~/bin/hugo-53 ~/bin/hugo
   popd || exit
 fi
 
-# for docsy theme websites
+# standard version that i use for most things right now
 if ! test -f ~/bin/hugo-extended-56
 then
   pushd /tmp || exit
@@ -147,6 +146,7 @@ then
   tar xzf hugo_extended_0.56.3_Linux-64bit.tar.gz
   mv hugo ~/bin/hugo-extended-56
   chmod a+x ~/bin/hugo-extended-56
+  ln -s ~/bin/hugo-extended-56 ~/bin/hugo
   popd || exit
 fi
 
