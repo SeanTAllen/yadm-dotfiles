@@ -152,27 +152,6 @@ fi
 ###
 
 ###
-# Exuberant ctags
-#
-
-if ! test -f ~/bin/ctags
-then
-  pushd /tmp || exit
-  wget http://prdownloads.sourceforge.net/ctags/ctags-5.8.tar.gz
-  tar xzf ctags-5.8.tar.gz
-  pushd ctags-5.8 || exit
-  ./configure --prefix="$HOME"/
-  make
-  make install
-  popd || exit
-  popd || exit
-fi
-
-#
-# end Exuberant ctags
-###
-
-###
 # Docker
 #
 
