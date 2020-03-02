@@ -110,20 +110,6 @@ fi
 ###
 
 ###
-# git-lfs
-#
-
-if ! command -v git-lfs
-then
-  curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
-  sudo apt-get -y install git-lfs
-fi
-
-#
-# end git-lfs
-###
-
-###
 # Hugo
 #
 
