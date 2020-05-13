@@ -1,3 +1,0 @@
-#!/bin/bash
-
-qdbus org.kde.ksmserver /KSMServer logout 1 0 0
