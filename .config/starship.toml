@@ -1,0 +1,12 @@
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+[character]
+symbol = "➜"
+error_symbol = "✗"
+use_symbol_for_status=true
+
+[line_break]
+disabled=true
+
+prompt_order=["hostname","directory","git_branch","git state","git_status","jobs"]
