@@ -44,7 +44,7 @@ alias mkidr     mkdir
 
 ## path
 
-set -gx PATH $HOME/.local/share/ponyup/bin $PATH
+set -gx PATH $HOME/.local/share/ponyup/bin $HOME/bin $PATH
 ## turn off fish greeting
 set fish_greeting
 
