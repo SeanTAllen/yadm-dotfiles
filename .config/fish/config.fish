@@ -42,6 +42,9 @@ alias yst      'yadm status'
 # standard typos
 alias mkidr     mkdir
 
+# make ls not awful
+alias ls       'ls -v --color'
+
 ## path
 
 set -gx PATH $HOME/.local/share/ponyup/bin $HOME/bin $PATH
