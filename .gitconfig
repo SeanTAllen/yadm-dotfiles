@@ -3,7 +3,7 @@
   email = sean@seantallen.com
 
 [core]
-  excludesfile = /Users/sean/.gitignore
+  excludesfile = /home/sean/.gitignore
   trustctime   = false
 
 [color]
