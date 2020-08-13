@@ -36,6 +36,9 @@
 [difftool]
   prompt = false
 
+[merge]
+conflictstyle = diff3
+
 [mergetool]
   prompt = false
 
