@@ -51,3 +51,7 @@ conflictstyle = diff3
   required = true
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge --skip %f
+
+[url "ssh://git@github.com"]
+  insteadof = https://github.com
+
