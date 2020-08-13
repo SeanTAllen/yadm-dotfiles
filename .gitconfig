@@ -37,7 +37,7 @@
   prompt = false
 
 [merge]
-conflictstyle = diff3
+  conflictstyle = diff3
 
 [mergetool]
   prompt = false
