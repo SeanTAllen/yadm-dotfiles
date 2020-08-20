@@ -32,7 +32,6 @@
 
 [branch]
   autosetuprebase = always
-  autosetupmerge = always
 
 [difftool]
   prompt = false
