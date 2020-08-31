@@ -54,3 +54,4 @@ set fish_greeting
 ## turn on starship for prompt
 starship init fish | source
 
+sudo hwclock -s
