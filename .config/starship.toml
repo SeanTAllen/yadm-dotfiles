@@ -15,4 +15,7 @@ disabled=true
 [cmake]
 disabled=true
 
+[golang]
+disabled=true
+
 prompt_order=["hostname","directory","git_branch","git state","git_status","jobs"]
