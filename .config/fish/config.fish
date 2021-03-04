@@ -55,3 +55,5 @@ set fish_greeting
 starship init fish | source
 
 sudo hwclock -s
+
+set -gx GOPATH /home/sean/go

@@ -121,3 +121,6 @@ fi
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
+if [[ -z "${GOPATH}" ]]; then
+  export GOPATH="~/go"
+fi
