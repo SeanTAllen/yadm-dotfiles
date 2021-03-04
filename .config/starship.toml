@@ -12,6 +12,9 @@ disabled=true
 [cmd_duration]
 disabled=true
 
+[cmake]
+disabled=true
+
 [golang]
 disabled=true
 
