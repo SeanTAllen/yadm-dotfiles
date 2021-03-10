@@ -1,13 +1,3 @@
-{% if yadm.hostname == "chilton" %}
-[user]
-  name  = Sean T. Allen
-  email = sean@seantallen.com
-{% else %}
-[user]
-  name  = Sean T. Allen
-  email = sean@seantallen.com 
-{% endif %}
-
 [core]
   excludesfile = /home/sean/.gitignore
   trustctime   = false
@@ -63,3 +53,6 @@
 
 [commit]
 	gpgsign = true
+
+[include]
+    path = .gitconfig.local
