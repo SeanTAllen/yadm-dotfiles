@@ -15,7 +15,7 @@
   div       = divergence
   diw       = diff -w
   out       = outgoing
-  pom       = push origin master
+  pom       = push origin main
   remotes   = remote -v
   st        = status
   tags      = tag --list
