@@ -9,6 +9,10 @@ end
 # editor
 set -gx EDITOR 'vim'
 
+# allow GPG to prompt for passphrase
+
+set -x GPG_TTY (tty)
+
 ## aliases
 
 # git
@@ -48,6 +52,7 @@ alias ls       'ls -v --color'
 ## path
 
 set -gx PATH $HOME/.local/share/ponyup/bin $HOME/bin $PATH
+
 ## turn off fish greeting
 set fish_greeting
 
@@ -55,3 +60,5 @@ set fish_greeting
 starship init fish | source
 
 sudo hwclock -s
+
+set -gx GOPATH /home/sean/go
