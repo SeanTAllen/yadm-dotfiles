@@ -18,4 +18,7 @@ disabled=true
 [golang]
 disabled=true
 
+[python]
+disabled=true
+
 prompt_order=["hostname","directory","git_branch","git state","git_status","jobs"]
