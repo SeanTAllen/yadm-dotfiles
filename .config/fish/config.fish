@@ -40,6 +40,7 @@ alias upstream 'git upstream'
 # yadm
 alias yadd     'yadm add'
 alias yci      'yadm commit'
+alias ypull    'yadm pull'
 alias ypush    'yadm push'
 alias yst      'yadm status'
 
