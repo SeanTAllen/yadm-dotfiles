@@ -52,10 +52,10 @@
   insteadof = https://github.com
 
 [commit]
-	gpgsign = true
+  gpgsign = true
 
 [include]
   path = .gitconfig.local
 
 [pull]
-	rebase = true
+  rebase = true
