@@ -13,42 +13,42 @@ set -gx EDITOR 'vim'
 
 set -x GPG_TTY (tty)
 
-## aliases
+## abbreviations
 
 # git
-alias add      'git add'
-alias amend    'git amend'
-alias branches 'git branches'
-alias ci       'git ci'
-alias co       'git co'
-alias di       'git diff'
-alias diw      'git diw'
-alias fetch    'git fetch'
-alias log      'git log'
-alias merge    'git merge'
-alias pom      'git pom'
-alias pull     'git pull'
-alias push     'git push'
-alias remote   'git remote'
-alias remotes  'git remotes'
-alias reset    'git reset --hard'
-alias st       'git status'
-alias tag      'git tag'
-alias tags     'git tags'
-alias upstream 'git upstream'
+abbr add      'git add'
+abbr amend    'git amend'
+abbr branches 'git branches'
+abbr ci       'git ci'
+abbr co       'git co'
+abbr di       'git diff'
+abbr diw      'git diw'
+abbr fetch    'git fetch'
+abbr log      'git log'
+abbr merge    'git merge'
+abbr pom      'git pom'
+abbr pull     'git pull'
+abbr push     'git push'
+abbr remote   'git remote'
+abbr remotes  'git remotes'
+abbr reset    'git reset --hard'
+abbr st       'git status'
+abbr tag      'git tag'
+abbr tags     'git tags'
+abbr upstream 'git upstream'
 
 # yadm
-alias yadd     'yadm add'
-alias yci      'yadm commit'
-alias ypull    'yadm pull'
-alias ypush    'yadm push'
-alias yst      'yadm status'
+abbr yadd     'yadm add'
+abbr yci      'yadm commit'
+abbr ypull    'yadm pull'
+abbr ypush    'yadm push'
+abbr yst      'yadm status'
 
 # standard typos
-alias mkidr     mkdir
+abbr mkidr     mkdir
 
 # make ls not awful
-alias ls       'ls -v --color'
+abbr ls       'ls -v --color'
 
 ## path
 
