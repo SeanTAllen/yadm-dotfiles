@@ -10,7 +10,6 @@ end
 set -gx EDITOR 'vim'
 
 # allow GPG to prompt for passphrase
-
 set -x GPG_TTY (tty)
 
 ## abbreviations
@@ -51,7 +50,6 @@ abbr mkidr     mkdir
 abbr ls       'ls -v --color'
 
 ## path
-
 set -gx PATH $HOME/.local/share/ponyup/bin $HOME/bin $PATH
 
 ## turn off fish greeting
@@ -60,6 +58,8 @@ set fish_greeting
 ## turn on starship for prompt
 starship init fish | source
 
+## sync clock if need
 set_hwclock
 
+## set GOPATH
 set -gx GOPATH /home/sean/go
