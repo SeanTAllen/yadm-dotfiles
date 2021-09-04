@@ -58,8 +58,5 @@ set fish_greeting
 ## turn on starship for prompt
 starship init fish | source
 
-## sync clock if need
-set_hwclock
-
 ## set GOPATH
 set -gx GOPATH /home/sean/go
