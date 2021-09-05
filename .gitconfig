@@ -62,3 +62,6 @@
 
 [rerere]
   enabled = true
+
+[help]
+	autocorrect = 50
