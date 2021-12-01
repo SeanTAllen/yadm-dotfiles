@@ -64,4 +64,4 @@
   enabled = true
 
 [help]
-	autocorrect = 50
+  autocorrect = 50
