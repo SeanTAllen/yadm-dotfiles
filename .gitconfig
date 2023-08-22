@@ -16,6 +16,7 @@
   diw       = diff -w
   out       = outgoing
   pom       = push origin main
+  pwl       = push --force-with-lease
   remotes   = remote -v
   st        = status
   tags      = tag --list
