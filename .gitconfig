@@ -25,6 +25,7 @@
 
 [push]
   default = simple
+  autosetupremote = true
 
 [branch]
   autosetuprebase = always
