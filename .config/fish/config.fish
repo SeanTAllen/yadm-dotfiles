@@ -17,6 +17,7 @@ set -x GPG_TTY (tty)
 # git
 abbr add      'git add'
 abbr amend    'git amend'
+abbr amne     'git amne'
 abbr branches 'git branches'
 abbr ci       'git ci'
 abbr co       'git co'

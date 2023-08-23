@@ -8,6 +8,7 @@
 
 [alias]
   amend     = commit --amend
+  amne      = commit --amend --no-edit
   branches  = branch --list
   ci        = commit
   co        = checkout
