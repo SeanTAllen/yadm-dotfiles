@@ -20,7 +20,13 @@ disabled=true
 [golang]
 disabled=true
 
+[package]
+disabled=true
+
 [python]
+disabled=true
+
+[rust]
 disabled=true
 
 prompt_order=["hostname","directory","git_branch","git state","git_status","jobs"]
