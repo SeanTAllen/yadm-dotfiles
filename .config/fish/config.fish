@@ -54,6 +54,8 @@ abbr ls       'ls -v --color'
 
 ## path
 set -gx PATH $HOME/.local/share/ponyup/bin $HOME/bin $PATH
+set -gx PATH /opt/homebrew/bin $PATH
+
 
 ## turn off fish greeting
 set fish_greeting
