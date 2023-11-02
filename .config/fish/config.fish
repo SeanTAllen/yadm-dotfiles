@@ -64,4 +64,4 @@ set fish_greeting
 starship init fish | source
 
 ## set GOPATH
-set -gx GOPATH /home/sean/go
+set -gx GOPATH $HOME/go
