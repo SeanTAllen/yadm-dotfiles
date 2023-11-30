@@ -20,6 +20,9 @@ disabled=true
 [cmake]
 disabled=true
 
+[dotnet]
+disabled=true
+
 [golang]
 disabled=true
 
