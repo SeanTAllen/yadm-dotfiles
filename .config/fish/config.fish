@@ -53,8 +53,7 @@ abbr mkidr     mkdir
 abbr ls       'ls -v --color'
 
 ## path
-set -gx PATH $HOME/.local/share/ponyup/bin $HOME/bin $PATH
-set -gx PATH /opt/homebrew/bin $PATH
+set -gx PATH /usr/local/share/dotnet/ /opt/homebrew/bin $HOME/.local/share/ponyup/bin $HOME/bin $PATH
 
 
 ## turn off fish greeting
@@ -65,3 +64,7 @@ starship init fish | source
 
 ## set GOPATH
 set -gx GOPATH $HOME/go
+
+## delete word
+bind deleteword backward-kill-word
+
