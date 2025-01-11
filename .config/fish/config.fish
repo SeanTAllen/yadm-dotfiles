@@ -53,8 +53,7 @@ abbr mkidr     mkdir
 abbr ls       'ls -v --color'
 
 ## path
-set -gx PATH /usr/local/share/dotnet/ /opt/homebrew/bin $HOME/.local/share/ponyup/bin $HOME/bin $PATH
-
+set -gx PATH /usr/local/share/dotnet/ /opt/homebrew/bin $HOME/.local/share/ponyup/bin $HOME/bin $HOME/.local/bin $PATH
 
 ## turn off fish greeting
 set fish_greeting
