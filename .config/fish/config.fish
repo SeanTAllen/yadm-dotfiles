@@ -64,6 +64,5 @@ starship init fish | source
 ## set GOPATH
 set -gx GOPATH $HOME/go
 
-## delete word
-bind \e\[27\;4\;8~ kill-whole-line
-
+## alt+shift+backspace
+bind \e\x7F kill-whole-line
