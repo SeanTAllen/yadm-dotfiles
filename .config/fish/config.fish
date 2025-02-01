@@ -65,4 +65,4 @@ starship init fish | source
 set -gx GOPATH $HOME/go
 
 ## alt+shift+backspace
-bind \e\x7F kill-whole-line
+bind \e\x7F backward-kill-word
