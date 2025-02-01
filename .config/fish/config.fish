@@ -64,5 +64,5 @@ starship init fish | source
 ## set GOPATH
 set -gx GOPATH $HOME/go
 
-## alt+shift+backspace
+## windows: alt+shift+backspace, mac: opt+shift+backspace
 bind \e\x7F backward-kill-word
