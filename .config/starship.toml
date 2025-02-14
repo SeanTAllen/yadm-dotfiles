@@ -5,6 +5,9 @@ add_newline = false
 success_symbol = "➜"
 error_symbol = "✗"
 
+[directory]
+truncation_length = 2
+
 [container]
 disabled=true
 
