@@ -61,9 +61,6 @@ set fish_greeting
 ## turn on starship for prompt
 starship init fish | source
 
-## set GOPATH
-set -gx GOPATH $HOME/go
-
 ## windows: alt+shift+backspace, mac: opt+shift+backspace
 bind \e\x7F backward-kill-word
 bind . 'expand-dot-to-parent-directory-path'
