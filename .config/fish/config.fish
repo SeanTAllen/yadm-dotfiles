@@ -52,6 +52,9 @@ abbr mkidr     mkdir
 # make ls not awful
 abbr ls       'ls -v --color'
 
+# make sure we are using vim
+abbr vi       vim
+
 ## path
 set -gx PATH /usr/local/share/dotnet/ /opt/homebrew/bin $HOME/.local/share/ponyup/bin $HOME/bin $HOME/.local/bin $PATH
 
