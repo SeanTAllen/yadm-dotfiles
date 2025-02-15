@@ -1,0 +1,76 @@
+{
+  "environments": [
+    {
+      "name": "corral",
+      "user": "sean",
+      "image": "ghcr.io/seantallen/dev-environment-develop-with-pony:latest",
+      "shell": "fish",
+      "workdir": "/workspace",
+      "workspace": "/home/sean/code/ponylang/corral",
+      "mounts": [
+        {"source":"/home/sean/.ssh","target":"/home/sean/.ssh", "type": "bind"},
+        {"source":"/home/sean/.gitconfig","target":"/home/sean/.gitconfig", "type": "bind"},
+        {"source":"/home/sean/.gitconfig.local","target":"/home/sean/.gitconfig.local", "type": "bind"},
+        {"source":"/home/sean/.gnupg","target":"/home/sean/.gnupg", "type": "bind"},
+        {"source":"/home/sean/.config","target":"/home/sean/.config", "type": "bind"},
+        {"source":"/home/sean/.vim","target":"/home/sean/.vim", "type": "bind"},
+        {"source":"/home/sean/.vimrc","target":"/home/sean/.vimrc", "type": "bind"},
+        {"source":"/var/run/docker.sock","target":"/var/run/docker.sock", "type": "bind"}
+      ]
+    },
+    {
+      "name": "credo",
+      "user": "sean",
+      "image": "ghcr.io/seantallen/dev-environment-develop-credo:latest",
+      "shell": "fish",
+      "workdir": "/workspace",
+      "workspace": "/home/sean/code/seantallen-org/credo",
+      "mounts": [
+        {"source":"/home/sean/.ssh","target":"/home/sean/.ssh", "type": "bind"},
+        {"source":"/home/sean/.gitconfig","target":"/home/sean/.gitconfig", "type": "bind"},
+        {"source":"/home/sean/.gitconfig.local","target":"/home/sean/.gitconfig.local", "type": "bind"},
+        {"source":"/home/sean/.gnupg","target":"/home/sean/.gnupg", "type": "bind"},
+        {"source":"/home/sean/.config","target":"/home/sean/.config", "type": "bind"},
+        {"source":"/home/sean/.vim","target":"/home/sean/.vim", "type": "bind"},
+        {"source":"/home/sean/.vimrc","target":"/home/sean/.vimrc", "type": "bind"},
+        {"source":"/var/run/docker.sock","target":"/var/run/docker.sock", "type": "bind"}
+      ]
+    },
+    {
+      "name": "lori",
+      "user": "sean",
+      "image": "ghcr.io/seantallen/dev-environment-develop-with-pony:latest",
+      "shell": "fish",
+      "workdir": "/workspace",
+      "workspace": "/home/sean/code/ponylang/lori",
+      "mounts": [
+        {"source":"/home/sean/.ssh","target":"/home/sean/.ssh", "type": "bind"},
+        {"source":"/home/sean/.gitconfig","target":"/home/sean/.gitconfig", "type": "bind"},
+        {"source":"/home/sean/.gitconfig.local","target":"/home/sean/.gitconfig.local", "type": "bind"},
+        {"source":"/home/sean/.gnupg","target":"/home/sean/.gnupg", "type": "bind"},
+        {"source":"/home/sean/.config","target":"/home/sean/.config", "type": "bind"},
+        {"source":"/home/sean/.vim","target":"/home/sean/.vim", "type": "bind"},
+        {"source":"/home/sean/.vimrc","target":"/home/sean/.vimrc", "type": "bind"},
+        {"source":"/var/run/docker.sock","target":"/var/run/docker.sock", "type": "bind"}
+      ]
+    },
+    {
+      "name": "action-testing",
+      "user": "sean",
+      "image": "ghcr.io/seantallen/dev-environment-develop-with-pony:latest",
+      "shell": "fish",
+      "workdir": "/workspace",
+      "workspace": "/home/sean/code/ponylang/action-testing",
+      "mounts": [
+        {"source":"/home/sean/.ssh","target":"/home/sean/.ssh", "type": "bind"},
+        {"source":"/home/sean/.gitconfig","target":"/home/sean/.gitconfig", "type": "bind"},
+        {"source":"/home/sean/.gitconfig.local","target":"/home/sean/.gitconfig.local", "type": "bind"},
+        {"source":"/home/sean/.gnupg","target":"/home/sean/.gnupg", "type": "bind"},
+        {"source":"/home/sean/.config","target":"/home/sean/.config", "type": "bind"},
+        {"source":"/home/sean/.vim","target":"/home/sean/.vim", "type": "bind"},
+        {"source":"/home/sean/.vimrc","target":"/home/sean/.vimrc", "type": "bind"},
+        {"source":"/var/run/docker.sock","target":"/var/run/docker.sock", "type": "bind"}
+      ]
+    }
+  ]
+}
