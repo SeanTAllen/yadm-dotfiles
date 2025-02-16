@@ -15,6 +15,8 @@
         {"source":"/home/sean/.config","target":"/home/sean/.config", "type": "bind"},
         {"source":"/home/sean/.vim","target":"/home/sean/.vim", "type": "bind"},
         {"source":"/home/sean/.vimrc","target":"/home/sean/.vimrc", "type": "bind"},
+        {"source":"/home/sean/.config/atuin","target":"/home/sean/.config/atuin", "type": "bind"},
+        {"source":"/home/sean/.local/share/atuin","target":"/home/sean/.local/share/atuin/", "type": "bind"},
         {"source":"/var/run/docker.sock","target":"/var/run/docker.sock", "type": "bind"}
       ]
     },
@@ -33,6 +35,8 @@
         {"source":"/home/sean/.config","target":"/home/sean/.config", "type": "bind"},
         {"source":"/home/sean/.vim","target":"/home/sean/.vim", "type": "bind"},
         {"source":"/home/sean/.vimrc","target":"/home/sean/.vimrc", "type": "bind"},
+        {"source":"/home/sean/.config/atuin","target":"/home/sean/.config/atuin", "type": "bind"},
+        {"source":"/home/sean/.local/share/atuin","target":"/home/sean/.local/share/atuin/", "type": "bind"},
         {"source":"/var/run/docker.sock","target":"/var/run/docker.sock", "type": "bind"}
       ]
     },
@@ -51,6 +55,8 @@
         {"source":"/home/sean/.config","target":"/home/sean/.config", "type": "bind"},
         {"source":"/home/sean/.vim","target":"/home/sean/.vim", "type": "bind"},
         {"source":"/home/sean/.vimrc","target":"/home/sean/.vimrc", "type": "bind"},
+        {"source":"/home/sean/.config/atuin","target":"/home/sean/.config/atuin", "type": "bind"},
+        {"source":"/home/sean/.local/share/atuin","target":"/home/sean/.local/share/atuin/", "type": "bind"},
         {"source":"/var/run/docker.sock","target":"/var/run/docker.sock", "type": "bind"}
       ]
     },
@@ -69,6 +75,8 @@
         {"source":"/home/sean/.config","target":"/home/sean/.config", "type": "bind"},
         {"source":"/home/sean/.vim","target":"/home/sean/.vim", "type": "bind"},
         {"source":"/home/sean/.vimrc","target":"/home/sean/.vimrc", "type": "bind"},
+        {"source":"/home/sean/.config/atuin","target":"/home/sean/.config/atuin", "type": "bind"},
+        {"source":"/home/sean/.local/share/atuin","target":"/home/sean/.local/share/atuin/", "type": "bind"},
         {"source":"/var/run/docker.sock","target":"/var/run/docker.sock", "type": "bind"}
       ]
     }
