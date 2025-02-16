@@ -1,1 +1,5 @@
+.cache/
 .local/
+code/
+pony-scratch/
+tmp/
