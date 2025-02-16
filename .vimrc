@@ -42,3 +42,6 @@ nn <silent> <leader>vo :NumbersOnOff<CR>
 " disable backup files i don't use
 set nobackup
 set noswapfile
+
+" turn on syntax highlighting
+syntax on
