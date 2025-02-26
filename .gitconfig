@@ -36,6 +36,9 @@
 [difftool]
   prompt = false
 
+[diff]
+  algorithm = histogram
+
 [merge]
   conflictstyle = zdiff3
 
