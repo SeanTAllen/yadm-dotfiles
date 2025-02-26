@@ -60,6 +60,9 @@
 [include]
   path = .gitconfig.local
 
+[fetch]
+  prune = true
+
 [pull]
   rebase = true
 
