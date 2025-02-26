@@ -68,3 +68,6 @@
 
 [help]
   autocorrect = 50
+
+[init]
+  defaultBranch = main
