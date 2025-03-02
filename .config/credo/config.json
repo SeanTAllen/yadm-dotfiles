@@ -79,6 +79,26 @@
         {"source":"/home/sean/.local/share/atuin","target":"/home/sean/.local/share/atuin/", "type": "bind"},
         {"source":"/var/run/docker.sock","target":"/var/run/docker.sock", "type": "bind"}
       ]
+    },
+    {
+      "name": "postgres",
+      "user": "sean",
+      "image": "ghcr.io/seantallen/dev-environment-develop-postgres:latest",
+      "shell": "fish",
+      "workdir": "/workspace",
+      "workspace": "/home/sean/code/ponylang/postgres",
+      "mounts": [
+        {"source":"/home/sean/.ssh","target":"/home/sean/.ssh", "type": "bind"},
+        {"source":"/home/sean/.gitconfig","target":"/home/sean/.gitconfig", "type": "bind"},
+        {"source":"/home/sean/.gitconfig.local","target":"/home/sean/.gitconfig.local", "type": "bind"},
+        {"source":"/home/sean/.gnupg","target":"/home/sean/.gnupg", "type": "bind"},
+        {"source":"/home/sean/.config","target":"/home/sean/.config", "type": "bind"},
+        {"source":"/home/sean/.vim","target":"/home/sean/.vim", "type": "bind"},
+        {"source":"/home/sean/.vimrc","target":"/home/sean/.vimrc", "type": "bind"},
+        {"source":"/home/sean/.config/atuin","target":"/home/sean/.config/atuin", "type": "bind"},
+        {"source":"/home/sean/.local/share/atuin","target":"/home/sean/.local/share/atuin/", "type": "bind"},
+        {"source":"/var/run/docker.sock","target":"/var/run/docker.sock", "type": "bind"}
+      ]
     }
   ]
 }
