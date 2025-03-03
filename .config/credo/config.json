@@ -43,7 +43,7 @@
     {
       "name": "lori",
       "user": "sean",
-      "image": "ghcr.io/seantallen/dev-environment-develop-with-pony:latest",
+      "image": "ghcr.io/seantallen/dev-environment-develop-lori:latest",
       "shell": "fish",
       "workdir": "/workspace",
       "workspace": "/home/sean/code/ponylang/lori",
