@@ -75,4 +75,7 @@ if status is-interactive
   ## ctrl+backspace
   bind ctrl-h backward-kill-word
   bind . 'expand-dot-to-parent-directory-path'
+
+  bind \x18 clear-commandline
+
 end
