@@ -53,15 +53,6 @@ set -gx PATH /usr/local/share/dotnet/ /opt/homebrew/bin $HOME/.local/share/ponyu
 ## turn off fish greeting
 set fish_greeting
 
-## Database setup
-# Staging
-abbr psql_staging_storage "psql -h udp-staging.cluster-clmrcgbyerps.us-east-2.rds.amazonaws.com -d udp_storage_staging -U deploy"
-abbr psql_staging_metadata "psql -h udp-staging.cluster-clmrcgbyerps.us-east-2.rds.amazonaws.com -d udp_metadata_staging -U deploy"
-
-# US Production
-abbr psql_us_prod_storage "psql -h udp-primary-rld.cluster-ce41ux1tl4wz.us-west-2.rds.amazonaws.com -d udp_storage_production -U deploy"
-abbr psql_us_prod_metadata "psql -h udp-primary-rld.cluster-ce41ux1tl4wz.us-west-2.rds.amazonaws.com -d udp_metadata_production -U deploy"
-
 if status is-interactive
   # Commands to run in interactive sessions go here
   # setup atuin
