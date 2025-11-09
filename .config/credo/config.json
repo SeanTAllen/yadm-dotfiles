@@ -1,6 +1,26 @@
 {
   "environments": [
     {
+      "name": "action-testing",
+      "user": "sean",
+      "image": "ghcr.io/seantallen/dev-environment-develop-with-pony:latest",
+      "shell": "fish",
+      "workdir": "/workspace",
+      "workspace": "/home/sean/code/ponylang/action-testing",
+      "mounts": [
+        {"source":"/home/sean/.ssh","target":"/home/sean/.ssh", "type": "bind"},
+        {"source":"/home/sean/.gitconfig","target":"/home/sean/.gitconfig", "type": "bind"},
+        {"source":"/home/sean/.gitconfig.local","target":"/home/sean/.gitconfig.local", "type": "bind"},
+        {"source":"/home/sean/.gnupg","target":"/home/sean/.gnupg", "type": "bind"},
+        {"source":"/home/sean/.config","target":"/home/sean/.config", "type": "bind"},
+        {"source":"/home/sean/.vim","target":"/home/sean/.vim", "type": "bind"},
+        {"source":"/home/sean/.vimrc","target":"/home/sean/.vimrc", "type": "bind"},
+        {"source":"/home/sean/.config/atuin","target":"/home/sean/.config/atuin", "type": "bind"},
+        {"source":"/home/sean/.local/share/atuin","target":"/home/sean/.local/share/atuin/", "type": "bind"},
+        {"source":"/var/run/docker.sock","target":"/var/run/docker.sock", "type": "bind"}
+      ]
+    },
+    {
       "name": "corral",
       "user": "sean",
       "image": "ghcr.io/seantallen/dev-environment-develop-with-pony:latest",
@@ -61,12 +81,12 @@
       ]
     },
     {
-      "name": "action-testing",
+      "name": "postgres",
       "user": "sean",
-      "image": "ghcr.io/seantallen/dev-environment-develop-with-pony:latest",
+      "image": "ghcr.io/seantallen/dev-environment-develop-postgres:latest",
       "shell": "fish",
       "workdir": "/workspace",
-      "workspace": "/home/sean/code/ponylang/action-testing",
+      "workspace": "/home/sean/code/ponylang/postgres",
       "mounts": [
         {"source":"/home/sean/.ssh","target":"/home/sean/.ssh", "type": "bind"},
         {"source":"/home/sean/.gitconfig","target":"/home/sean/.gitconfig", "type": "bind"},
@@ -81,12 +101,12 @@
       ]
     },
     {
-      "name": "postgres",
+      "name": "ssl",
       "user": "sean",
-      "image": "ghcr.io/seantallen/dev-environment-develop-postgres:latest",
+      "image": "ghcr.io/seantallen/dev-environment-develop-with-pony:latest",
       "shell": "fish",
       "workdir": "/workspace",
-      "workspace": "/home/sean/code/ponylang/postgres",
+      "workspace": "/home/sean/code/ponylang/ssl",
       "mounts": [
         {"source":"/home/sean/.ssh","target":"/home/sean/.ssh", "type": "bind"},
         {"source":"/home/sean/.gitconfig","target":"/home/sean/.gitconfig", "type": "bind"},
