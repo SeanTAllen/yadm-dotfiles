@@ -47,6 +47,9 @@ abbr ls       'ls -v --color'
 # make sure we are using vim
 abbr vi       vim
 
+# shorten helix
+abbr hx       helix
+
 ## path
 set -gx PATH /usr/local/share/dotnet/ /opt/homebrew/bin $HOME/.local/share/ponyup/bin $HOME/bin $HOME/.local/bin $PATH
 
