@@ -1,0 +1,17 @@
+[[language]]
+name = "ponylang"
+language-servers = [ "pony-lsp" ]
+
+[language-server.pony-lsp]
+command = "pony-lsp"
+args = [""]
+
+[[language]]
+name = "markdown"
+scope = "source.markdown"
+injection-regex = "md"
+file-types = ["md", "markdown"]
+
+[[language]]
+name = "starlark"
+file-types = ["bzl", "BUILD", "WORKSPACE"]
