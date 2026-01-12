@@ -13,6 +13,7 @@
   ci        = commit
   co        = checkout
   di        = diff
+  dif       = "!git --no-pager diff"
   div       = divergence
   diw       = diff -w
   out       = outgoing
