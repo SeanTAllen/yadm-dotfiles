@@ -1,5 +1,5 @@
 # editor
-set -gx EDITOR 'vim'
+set -gx EDITOR 'helix'
 
 # allow GPG to prompt for passphrase
 set -x GPG_TTY (tty)
