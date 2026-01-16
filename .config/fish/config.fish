@@ -73,5 +73,3 @@ if status is-interactive
   bind \x18 clear-commandline
 end
 
-## increase emacs font face size that is controlled by GTK
-set -gx GDK_DPI_SCALE 1.5 emacs
