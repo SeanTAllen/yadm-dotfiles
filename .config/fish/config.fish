@@ -71,5 +71,8 @@ if status is-interactive
   bind . 'expand-dot-to-parent-directory-path'
 
   bind \x18 clear-commandline
+
+  # ctrl-z can also bring a backgrounded application back
+  bind \cz 'fg 2>/dev/null; commandline -f repaint'
 end
 
