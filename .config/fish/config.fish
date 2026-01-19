@@ -62,6 +62,8 @@ if status is-interactive
   atuin init fish | source
   # turn on starship for prompt
   starship init fish | source
+  # turn on zoxide for "cd" replacement
+  zoxide init fish | source
 
   ## windows: alt+shift+backspace, mac: opt+shift+backspace
   bind alt-shift-backspace backward-kill-word
