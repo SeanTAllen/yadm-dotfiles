@@ -1,4 +1,4 @@
-theme = "darcula-solid"
+theme = "mmm-dark"
 
 [editor]
 bufferline = "always"
@@ -15,3 +15,4 @@ render = true
 [editor.soft-wrap]
 enable = true
 wrap-at-text-width = true
+

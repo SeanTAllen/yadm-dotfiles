@@ -1,0 +1,152 @@
+# mmm-dark.toml
+#
+# A mostly dark greyscale theme for the Helix editor.
+#
+# Based on/Inspired by:
+#
+# - [Alabaster for Helix](https://github.com/wolf/alabaster-for-helix)
+# - [Verdandi](https://github.com/be5invis/vsc-theme-verdandi)
+#
+
+# GENERAL - Diagnostics (LSP errors/warnings)
+warning = { fg = "highlight" }
+error = { fg = "error-red", modifiers = ["bold"] }
+info = { fg = "definition" }
+hint = { fg = "punctuation-light" }
+diagnostic = { underline = { style = "curl" } }
+
+# UI - Interface elements
+"ui.background" = { bg = "bg" }
+"ui.text" = { fg = "fg" }
+"ui.text.focus" = { fg = "active", modifiers = ["bold"] }
+
+"ui.cursor" = { bg = "active", fg = "bg" }
+"ui.cursor.primary" = { bg = "active", fg = "bg" }
+"ui.cursor.match" = { bg = "highlight" }
+
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection-primary" }
+
+"ui.linenr" = { fg = "punctuation-light" }
+"ui.linenr.selected" = { fg = "active", modifiers = ["bold"] }
+
+"ui.statusline" = { fg = "fg", bg = "panel" }
+"ui.statusline.inactive" = { fg = "punctuation-light", bg = "panel" }
+
+# Bufferline - make active buffer clearly visible (like onelight-fixed-bufferline)
+"ui.bufferline.active" = { fg = "active", bg = "bg", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "bg" }
+"ui.bufferline" = { fg = "punctuation-light", bg = "panel" }
+
+"ui.menu" = { fg = "fg", bg = "panel" }
+"ui.menu.selected" = { fg = "bg", bg = "active" }
+
+"ui.popup" = { fg = "fg", bg = "panel" }
+"ui.popup.info" = { fg = "fg", bg = "panel" }
+"ui.window" = { fg = "punctuation-light" }
+"ui.help" = { fg = "fg", bg = "bg" }
+
+# Jump labels - extremely visible
+"ui.virtual.jump-label" = { fg = "jump-label", modifiers = ["bold"] }
+
+# Rulers - extremely visible
+"ui.virtual.ruler" = { bg = "accents" }
+
+# Indent guide - extremely visible
+"ui.virtual.indent-guide" = "accents"
+
+# LSP diagnostic inline/expanded text
+"diagnostic.error" = { underline = { color = "error-red", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "highlight", style = "curl" } }
+"diagnostic.info" = { underline = { color = "definition", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "punctuation-light", style = "curl" } }
+
+# SYNTAX HIGHLIGHTING
+"string" = { fg = "fg", modifiers = ["italic"] }
+"string.regexp" = { fg = "fg" }
+"string.special" = { fg = "fg" }
+
+"constant" = { fg = "fg" }
+"constant.numeric" = { fg = "fg" }
+"constant.character" = { fg = "fg" }
+"constant.builtin" = { fg = "fg" }
+
+"comment" = { fg = "comment" }
+"comment.line" = { fg = "comment" }
+"comment.block" = { fg = "comment" }
+
+"function" = { fg = "fg" }
+"function.builtin" = { fg = "fg" }
+"function.method" = { fg = "fg" }
+
+"constructor" = { fg = "fg" }
+"type" = { fg = "fg" }
+"type.builtin" = { fg = "fg" }
+
+"variable" = { fg = "fg" }
+"variable.parameter" = { fg = "fg" }
+"variable.builtin" = { fg = "fg" }
+
+"keyword" = { fg = "ac-fg", modifiers = ["bold"] }
+"keyword.control" = { fg = "ac-fg", modifiers = ["bold"] }
+"keyword.operator" = { fg = "ac-fg", modifiers = ["bold"] }
+
+# Punctuation is dimmed
+"punctuation" = { fg = "punctuation-dark" }
+"punctuation.bracket" = { fg = "punctuation-dark" }
+"punctuation.delimiter" = { fg = "punctuation-dark" }
+
+"operator" = { fg = "punctuation-dark" }
+
+# Special cases
+"tag" = { fg = "fg" }
+"attribute" = { fg = "fg" }
+"namespace" = { fg = "fg" }
+"label" = { fg = "fg" }
+
+# MARKUP - For markdown/documentation
+"markup.heading" = { fg = "ac-fg", modifiers = ["bold"] }
+"markup.list" = { fg = "fg" }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.link.url" = { fg = "fg", modifiers = ["underlined"] }
+"markup.link.text" = { fg = "fg" }
+"markup.quote" = { fg = "comment" }
+"markup.raw" = { fg = "fg", modifiers = ["italic"] }
+
+# DIFF - Version control
+"diff.plus" = { fg = "diff-green" }
+"diff.minus" = { fg = "diff-red" }
+"diff.delta" = { fg = "diff-orange" }
+
+[palette]
+# Core colors
+# Main text
+fg = "#949ca3"
+# Accentuated Main text
+ac-fg = "#d8dce0"
+# Background
+bg = "#0f1216"
+# Accents
+accents = "#383838"
+
+comment = "#777777"
+definition = "#71ADE7"
+
+# Supporting colors
+punctuation-light = "#778089"
+punctuation-dark = "#555555"
+selection = "#1E3A5F"
+selection-primary = "#012f4d"
+
+active = "#b88e54"
+highlight = "#FF9800"
+error-red = "#DFDF8E"
+panel = "#252526"
+jump-label = "#FF6B35"
+
+# Diff colors
+diff-green = "#95CB82"
+diff-red = "#DFDF8E"
+diff-orange = "#FF9800"
+

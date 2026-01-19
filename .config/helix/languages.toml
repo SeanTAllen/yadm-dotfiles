@@ -15,3 +15,7 @@ file-types = ["md", "markdown"]
 [[language]]
 name = "starlark"
 file-types = ["bzl", "BUILD", "WORKSPACE"]
+
+[[language]]
+name = "fish"
+auto-format = false
