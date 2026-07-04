@@ -101,3 +101,9 @@
   navigate = true  # use n and N to move between diff sections
   side-by-side = true
   map-styles = bold purple => syntax magenta, bold cyan => syntax blue
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential

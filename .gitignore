@@ -3,3 +3,5 @@
 code/
 pony-scratch/
 tmp/
+
+**/.claude/settings.local.json
