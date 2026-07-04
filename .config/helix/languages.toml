@@ -1,10 +1,10 @@
 [[language]]
 name = "ponylang"
 language-servers = [ "pony-lsp" ]
+indent = { tab-width = 2, unit = "  " }
 
 [language-server.pony-lsp]
 command = "pony-lsp"
-args = [""]
 
 [[language]]
 name = "markdown"
