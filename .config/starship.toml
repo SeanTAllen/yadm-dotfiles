@@ -1,6 +1,12 @@
 # Don't print a new line at the start of the prompt
 add_newline = false
 
+[username]
+format = '[$user]($style) '
+
+[hostname]
+format = 'on [$hostname]($style) in '
+
 [character]
 success_symbol = "➜"
 error_symbol = "✗"
