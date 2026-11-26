@@ -30,6 +30,9 @@ disabled=true
 [golang]
 disabled=true
 
+[nodejs]
+disabled=true
+
 [package]
 disabled=true
 
