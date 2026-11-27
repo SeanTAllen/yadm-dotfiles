@@ -63,9 +63,6 @@
 [url "ssh://git@github.com"]
   insteadof = https://github.com
 
-[commit]
-  gpgsign = true
-
 [include]
   path = .gitconfig.local
 
